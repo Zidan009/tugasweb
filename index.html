@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Besar Web | Liverpool FC</title>
+    <link rel="stylesheet" href="assets/css/w3.css">
+    <link rel="icon" href="assets/img/man_utd.jpeg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap">
+</head>
+<style>
+    a {
+        font-family: 'Montserrat',Helvetica,sans-serif;
+        font-size: 14px;
+        font-size: .875rem;
+        font-weight: 600;
+    }
+    h2 {
+        font-family: 'Montserrat',Helvetica,sans-serif;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+
+    .w3-card-4 img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+    .card-content {
+        padding: 15px;
+        height: 300px;
+    }
+    .mySlides {
+        display: none;
+        animation: fade-in 1.5s ease-out; /* Tentukan durasi, jenis easing, dan nama keyframe */
+    }
+
+    .w3-col {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+    @keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+</style>
+<body>
+    <div class="w3-container" style="background-color:red;
+    padding: 20px;">
+        <img class="w3-round-xlarge" src="assets/img/liverpool.png" width="100px" alt="">
+        <a onclick="movePage('home')" class="w3-bar-item w3-button w3-text-white">HOME</a>
+        <a onclick="movePage('anfield')" class="w3-bar-item w3-button w3-text-white">ANFIELD</a>
+        <a onclick="movePage('squad')" class="w3-bar-item w3-button w3-text-white">SQUAD</a>
+        <div class="w3-dropdown-hover">
+            <a class="w3-button w3-text-white">KITS</a>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a onclick="movePage('homekits')" class="w3-bar-item w3-button">HOME</a>
+                <a onclick="movePage('awaykits')" class="w3-bar-item w3-button">AWAY</a>
+            </div>
+        </div>
+        <a onclick="movePage('aboutme')" class="w3-bar-item w3-text-white w3-right" style="padding:60px;">ABOUT ME</a>
+    </div>
+    <div class="w3-content page" id="home" style="max-width:1100px;">
+        <div class="content" id="home">
+            <h1 class="w3-text-black w3-margin-top w3-center"><strong>News!</strong></h1>
+            <div class="w3-row w3-padding-80" id="home">
+                <div class="w3-col m6 w3-padding-large ">
+                    <img src="assets/img/conor.webp" class="w3-round-large w3-image  w3-animate-left "
+                        alt="Table Setting" width="600">
+                </div>
+
+                <div class="w3-col m6 w3-padding-large w3-text-white w3-animate-right ">
+                    <h1 class="w3-text-black"><strong>Conor Bradley named January's PFA Premier League Fans' Player of the month</strong></h1><br>
+                </div>
+            </div>
+            <div class="w3-row w3-padding-64" id="home">
+                <div class="w3-col m6 w3-padding-large w3-text-white w3-animate-left ">
+                    <h1 class="w3-gradient-text w3-text-black"><strong>Fernando Torres to return to Anfield for LFC Legends match with AJAX</strong></h1><br>
+                </div>
+                <div class="w3-col m6 w3-padding-large ">
+                    <img src="assets/img/torres.webp" class="w3-round-large w3-image  w3-animate-right "
+                        alt="Table Setting" width="600">
+                </div>
+            </div>
+            <div class="w3-row w3-padding-54" id="home">
+                <div class="w3-col m6 w3-padding-large ">
+                    <img src="assets/img/klopp.webp" class="w3-round-large w3-image w3-animate-left "
+                        alt="Table Setting" width="600">
+                </div>
+
+                <div class="w3-col m6 w3-padding-large w3-text-white w3-animate-right ">
+                    <h1 class="w3-text-black"><strong>Jurgen Klopp confirms he will leave Liverpool this season.</strong></h1><br>
+                </div>
+            </div>
+        </div>
+    </div>
+      <div class="w3-container page w3-animate-zoom" id="anfield">
+        <h2 class="w3-center">ANFIELD</h2>
+        <center>
+            <div class="slideshow-container">
+                <div class="mySlides">
+                  <img class="w3-round-large" src="assets/img/anfield1.jpg" style="width: 500px;">
+                </div>
+                <div class="mySlides">
+                  <img class="w3-round-large" src="assets/img/anfield2.jpg" style="width: 500px;">
+                </div>
+                <div class="mySlides">
+                    <img class="w3-round-large" src="assets/img/anfield3.jpg" style="width: 500px;">
+                </div>
+            </div>
+            <div class="w3-container w3-center">
+                <p class="w3-serif w3-text-black">
+                    Anfield adalah sebuah stadion sepak bola yang terletak di Liverpool, Inggris. Sejarahnya sangat erat kaitannya dengan klub sepak bola Liverpool FC. Berikut adalah ringkasan sejarah Anfield:
+
+Pembangunan Awal: Anfield dibangun pada tahun 1884 oleh John Orrell, yang awalnya direncanakan sebagai lapangan untuk tim rugby lokal, Everton FC. Namun, setelah perselisihan dengan pemilik tanah, Everton pindah ke lokasi yang berbeda, meninggalkan Anfield kosong.
+
+Klub Sepak Bola Liverpool FC: Pada tahun 1892, John Houlding, pemilik tanah Anfield, mendirikan tim sepak bola baru bernama Liverpool FC setelah Everton pindah. Liverpool kemudian mengambil alih Anfield sebagai markas mereka.
+
+Pertumbuhan dan Pengembangan: Anfield mengalami berbagai perubahan dan pengembangan sepanjang sejarahnya. Kapasitas stadion ditingkatkan berkali-kali untuk mengakomodasi jumlah penonton yang semakin bertambah.
+
+Kesuksesan Klub: Seiring dengan kesuksesan Liverpool FC sebagai salah satu klub terkemuka di Inggris dan Eropa, Anfield menjadi salah satu stadion paling ikonik di dunia sepak bola. Stadion ini menyaksikan berbagai momen bersejarah, termasuk kemenangan Liverpool dalam berbagai turnamen dan kompetisi.
+
+Tribun dan Fasilitas: Seiring berjalannya waktu, tribun dan fasilitas di Anfield terus diperbarui dan ditingkatkan untuk meningkatkan pengalaman penonton dan meningkatkan pendapatan klub.
+
+Atmosfer: Anfield terkenal dengan atmosfer yang sangat mendukung dan memabukkan selama pertandingan. Para pendukung Liverpool, yang dikenal sebagai "The Kop", menciptakan atmosfer yang sangat bersemangat dan menyertakan lagu-lagu dan nyanyian khas mereka selama pertandingan.
+
+Peristiwa Penting: Anfield juga menjadi saksi bagi berbagai peristiwa penting di dunia sepak bola, termasuk konser musik, acara amal, dan pertandingan sepak bola internasional.
+
+Hingga saat ini, Anfield tetap menjadi markas Liverpool FC dan salah satu stadion terkenal di dunia sepak bola yang mempunyai nilai sejarah yang sangat berharga bagi klub dan pendukungnya.</p>
+            </div>
+        </center>
+      </div>
+      <div class="w3-container page w3-animate-zoom" id="homekits">
+        <br>
+                <div class="w3-container w3-center w3-animate-left">
+                    <img src="assets/img/home.webp" width="600px" alt="" class="w3-round">
+                    <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>HOME</strong> Jersey</div>
+                </div>
+                <br>
+        </div>
+        <div class="w3-container page w3-animate-zoom" id="awaykits">
+                    <br>
+                    <div class="w3-container w3-center w3-animate-left">
+                        <img src="assets/img/away.webp" width="600px" alt="" class="w3-round">
+                        <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>AWAY</strong> Jersey</div>
+                    </div>
+            </div>
+      <div class="w3-container page w3-animate-bottom" id="squad">
+        <h2 class="w3-center gradient-text">GOALKEEPERS</h2>
+        <div class="w3-center w3-row">
+            <div class="w3-container w3-animate-left  w3-col m4">
+                <img src="assets/img/players/alisson.png" width="100px" alt="" class="w3-round-large">
+                <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>1</strong> Alisson Becker</div>
+            </div>
+            <div class="w3-container w3-animate-left  w3-col m4">
+                <img src="assets/img/players/adrian.png" width="100px" alt="" class="w3-round-large">
+                <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>13</strong> Adrian</div>
+            </div>
+            <div class="w3-container w3-animate-left  w3-col m4">
+                <img src="assets/img/players/kelleher.png" width="100px" alt="" class="w3-round-large">
+                <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>62</strong> Caoimhin Kelleher</div>
+            </div>
+        </div>
+        <br>
+        <h2 class="w3-center gradient-text">DEFENDERS</h2>
+        <div class="w3-center w3-row">
+            <div class="w3-container w3-animate-left  w3-col m4">
+                <img src="assets/img/players/gomez.png" width="100px" alt="" class="w3-round-large">
+                <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>2</strong> Joe Gomez</div>
+            </div>
+            <div class="w3-container w3-animate-left  w3-col m4">
+                <img src="assets/img/players/vandijk.png" width="100px" alt="" class="w3-round-large">
+                <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>4</strong> Virgil Van Dijk</div>
+            </div>
+            <div class="w3-container w3-animate-left  w3-col m4">
+                <img src="assets/img/players/konate.png" width="100px" alt="" class="w3-round-large">
+                <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>5</strong> Ibrahima Konate</div>
+            </div>
+            <div class="w3-container w3-animate-left  w3-col m4">
+                <img src="assets/img/players/tsimikas.png" width="100px" alt="" class="w3-round-large">
+                <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>21</strong> Kostas Tsimikas</div>
+            </div>
+            <div class="w3-container w3-animate-left  w3-col m4">
+                <img src="assets/img/players/robertson.png" width="100px" alt="" class="w3-round-large">
+                <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>26</strong> Andy Robertson</div>
+            </div>
+            <div class="w3-container w3-animate-left  w3-col m4">
+                <img src="assets/img/players/matip.png" width="100px" alt="" class="w3-round-large">
+                <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>32</strong> Joel Matip</div>
+            </div>
+            <div class="w3-container w3-animate-left  w3-col m4">
+                <img src="assets/img/players/williams.png" width="100px" alt="" class="w3-round-large">
+                <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>46</strong> Rhys williams</div>
+            </div>
+            <div class="w3-container w3-animate-left  w3-col m4">
+                <img src="assets/img/players/arnold.png" width="100px" alt="" class="w3-round-large">
+                <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>66</strong> Trent Alexander Arnold</div>
+            </div>
+            <div class="w3-container w3-animate-left  w3-col m4">
+                <img src="assets/img/players/quansah.png" width="100px" alt="" class="w3-round-large">
+                <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>78</strong> Jorell Quansah</div>
+            </div>
+            <div class="w3-container w3-animate-left  w3-col m4">
+                <img src="assets/img/players/bradley.png" width="100px" alt="" class="w3-round-large">
+                <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>84</strong> Conor Bradley</div>
+            </div>
+        </div>
+        <br>
+        <h2 class="w3-center gradient-text">MIDFIELDERS</h2>
+        <div class="w3-center w3-row">
+            <div class="w3-container w3-animate-left  w3-col m4">
+                <img src="assets/img/players/bajcetic.png" width="100px" alt="" class="w3-round-large">
+                <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>43</strong> Stefan Bajcetic</div>
+            </div>
+            <div class="w3-container w3-animate-left  w3-col m4">
+                <img src="assets/img/players/thiago.png" width="100px" alt="" class="w3-round-large">
+                <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>6</strong> Thiago Alcantara</div>
+            </div>
+            <div class="w3-container w3-animate-left  w3-col m4">
+                <img src="assets/img/players/jones.png" width="100px" alt="" class="w3-round-large">
+                <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>17</strong> Curtis Jones</div>
+            </div>
+            <div class="w3-container w3-animate-left  w3-col m4">
+                <img src="assets/img/players/elliot.png" width="100px" alt="" class="w3-round-large">
+                <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>19</strong> Harvey Elliot</div>
+            </div>
+            <div class="w3-container w3-animate-left  w3-col m4">
+                <img src="assets/img/players/clark.png" width="100px" alt="" class="w3-round-large">
+                <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>42</strong> Bobby Clark</div>
+            </div>
+            <div class="w3-container w3-animate-left  w3-col m4">
+                <img src="assets/img/players/allister.png" width="100px" alt="" class="w3-round-large">
+                <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>10</strong> Alexis Mac Allister</div>
+            </div>
+            <div class="w3-container w3-animate-left  w3-col m4">
+                <img src="assets/img/players/szoboszlai.png" width="100px" alt="" class="w3-round-large">
+                <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>8</strong> Dominik Szoboszlai</div>
+            </div>
+            <div class="w3-container w3-animate-left  w3-col m4">
+                <img src="assets/img/players/endo.png" width="100px" alt="" class="w3-round-large">
+                <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>3</strong> Wataru Endo</div>
+            </div>
+            <div class="w3-container w3-animate-left  w3-col m4">
+                <img src="assets/img/players/gravenberch.png" width="100px" alt="" class="w3-round-large">
+                <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>38</strong> Ryan Gravenberch</div>
+            </div>
+        </div>
+        <br>
+        <h2 class="w3-center gradient-text">FORWARDS</h2>
+        <div class="w3-center w3-row">
+            <div class="w3-container w3-animate-left  w3-col m4">
+                <img src="assets/img/players/salah.png" width="100px" alt="" class="w3-round-large">
+                <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>11</strong> Mohammed Salah</div>
+            </div>
+            <div class="w3-container w3-animate-left  w3-col m4">
+                <img src="assets/img/players/gakpo.png" width="100px" alt="" class="w3-round-large">
+                <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>18</strong> Cody Gakpo</div>
+            </div>
+            <div class="w3-container w3-animate-left  w3-col m4">
+                <img src="assets/img/players/jota.png" width="100px" alt="" class="w3-round-large">
+                <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>20</strong> Diogo Jota</div>
+            </div>
+            <div class="w3-container w3-animate-left  w3-col m4">
+                <img src="assets/img/players/diaz.png" width="100px" alt="" class="w3-round-large">
+                <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>7</strong> Luis Diaz</div>
+            </div>
+            <div class="w3-container w3-animate-left  w3-col m4">
+                <img src="assets/img/players/nunez.png" width="100px" alt="" class="w3-round-large">
+                <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>9</strong> Darwin Nunze</div>
+            </div>
+            <div class="w3-container w3-animate-left  w3-col m4">
+                <img src="assets/img/players/doak.png" width="100px" alt="" class="w3-round-large">
+                <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>50</strong> Ben Doak</div>
+            </div>
+            <div class="w3-container w3-animate-left  w3-col m4">
+                <img src="assets/img/players/kaide gordon.png" width="100px" alt="" class="w3-round-large">
+                <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>49</strong> Kaido Gordon</div>
+            </div>
+        </div>
+        </div>
+        </div>
+        <div class="w3=container page w3-animate-top" id="aboutme">
+            <center>
+                <h2>ABOUT ME</h2>
+                    <div class="w3-display-container w3-container w3-text-black">
+                        <div style="width: 300px;">
+                            <img src="assets/img/me.jpeg" alt="foto profil" width="100%" class="w3-circle">
+                                <div class="w3-container">
+                                    <h3 class="gradient-text">Muhammad Zidan</h3>
+                                    <p>Kelas : IF-11</p>
+                                    <p>NIM: 10123441</p>
+                                    <h2 class="gradient-text">UNIVERSITAS KOMPUTER</h2>
+                        </div>
+                    </div>
+                </div>
+            </center>
+        </div>
+</body>
+<script>
+window.onload = function () {
+    checkHash();
+  };
+
+  function checkHash() {
+    var hash = window.location.hash.substring(1);
+    var validPages = ["home", "anfield","titles"]; // Daftar halaman yang valid
+
+    if (validPages.includes(hash)) {
+      movePage(hash);
+    } else {
+      movePage("home"); // Halaman default saat tidak ada hash atau hash tidak valid
+    }
+  }
+
+function movePage(page) {
+    var i;
+    var x = document.getElementsByClassName("page");
+    for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none"; 
+    }
+    document.getElementById(page).style.display = "block"; 
+}
+
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 4000);
+}
+</script>
+</html>
